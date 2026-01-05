@@ -61,7 +61,7 @@ try:
     logger.info("✓ Configuration loaded from config.py")
 except ImportError:
     logger.warning("⚠️  config.py not found. Using default values.")
-    OPENROUTER_API_KEY = "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"
+    OPENROUTER_API_KEY = "yourapikey"
     FLASK_SECRET_KEY = "change-this-in-production-2024"
 
 app = Flask(__name__)
@@ -1350,4 +1350,5 @@ if __name__ == '__main__':
     print("="*80 + "\n")
     
     # Run Flask app
+
     app.run(debug=True, host='0.0.0.0', port=5000)
